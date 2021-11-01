@@ -45,3 +45,7 @@ Incorret Email
     Fill Credentials    ${user}
     Submit Credentials
     Should Be Type Email
+
+# Desafio 1 do módulo PRO
+# Automatizar 3 novos casos de testes: Email obrigatório, Senha obrigatória, Campos obrigatórios
+# Entrega: no Github
