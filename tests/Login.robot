@@ -9,7 +9,7 @@ Test Teardown   Finish Session
 *Test Cases*
 User login
 
-    ${user}                  Factory User Login
+    ${user}                  Factory User   login
 
     Go To Login Page
     Fill Credentials        ${user}
@@ -36,7 +36,7 @@ User not found
     Submit Credentials
     Modal Content Should Be     Usuário e/ou senha inválidos.
 
-Incorret Email
+Incorrect Email
     [Tags]          inv_email
 
     ${user}         Create Dictionary       email=papito.com.br        password=abc123
