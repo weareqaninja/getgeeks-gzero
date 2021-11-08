@@ -32,3 +32,6 @@ Users Seed
 
     ${user}         Factory User Login
     Insert User     ${user}
+
+    ${user2}        Factory User Be Geek
+    Insert User     ${user2}
