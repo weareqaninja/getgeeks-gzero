@@ -35,3 +35,6 @@ Users Seed
 
     ${user2}        Factory User    be_geek
     Insert User     ${user2}
+
+    ${user3}        Factory User    short_desc
+    Insert User     ${user3}

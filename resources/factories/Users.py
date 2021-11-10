@@ -40,6 +40,19 @@ def factory_user(target):
                 'work': 'Remoto',
                 'cost': '100'
             }
+        },
+        "short_desc": {
+            'name': 'Peter',
+            'lastname': 'Jordam',
+            'email': 'peter@einerd.com',
+            'password': 'pwd123',
+            'geek_profile': {
+                'whats': '21999999999',
+                'desc': 'Formato o seu PC',
+                'printer_repair': 'Não',
+                'work': 'Ambos',
+                'cost': '200'
+            }
         }
     }
 
