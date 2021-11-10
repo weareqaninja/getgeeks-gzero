@@ -53,6 +53,19 @@ def factory_user(target):
                 'work': 'Ambos',
                 'cost': '200'
             }
+        },
+        "long_desc": {
+            'name': 'Dio',
+            'lastname': 'Linux',
+            'email': 'dio@linux.com',
+            'password': 'pwd123',
+            'geek_profile': {
+                'whats': '11999999999',
+                'desc': 'Instalo Distros Ubuntu, Debian, ElementaryOS, PopOS, Linux Mint, Kurumin, Mandrake, Connectiva, Fedora, RedHat, CentOS, Slackware, Gentoo, Archlinux, Kubuntu, Xubuntu, Suze, Mandriva, Edubuntu, KateOS, Sabayon Linux, Manjaro Linux, BigLinux, ZorinOS, Unity',
+                'printer_repair': 'Não',
+                'work': 'Ambos',
+                'cost': '200'
+            }
         }
     }
 
