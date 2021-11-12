@@ -1,2 +1,2 @@
 robot -l NONE -o NONE -r NONE tasks/Delorean.robot
-robot -d ./logs tests/AttemptBeGeek2.robot
+robot -d ./logs tests/AttemptBeGeek.robot
