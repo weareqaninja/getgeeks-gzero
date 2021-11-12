@@ -21,7 +21,6 @@ ${BASE_URL}         https://getgeeks-papito.herokuapp.com
 Start Session
     New Browser     chromium        headless=False      slowMo=00:00:00
     New Page        ${BASE_URL}
-    Set Viewport Size   1920    1080
 
 Finish Session
     Take Screenshot     fullPage=True
