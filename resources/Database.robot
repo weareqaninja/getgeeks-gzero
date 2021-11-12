@@ -36,8 +36,5 @@ Users Seed
     ${user2}        Factory User    be_geek
     Insert User     ${user2}
 
-    ${user3}        Factory User    short_desc
+    ${user3}        Factory User    attempt_be_geek
     Insert User     ${user3}
-
-    ${user4}        Factory User    long_desc
-    Insert User     ${user4}
