@@ -19,6 +19,8 @@ Cost letters        cost                aaaa                        Valor hora d
 Cost alpha          cost                aa12                        Valor hora deve ser numérico
 Cost special chars  cost                $%^&                        Valor hora deve ser numérico
 Empty cost          cost                ${EMPTY}                    Valor hora deve ser numérico
+No printer repair   printer_repair      ${EMPTY}                    Por favor, informe se você é um Geek Supremo
+No work             work                ${EMPTY}                    Por favor, selecione o modelo de trabalho
 
 *Keywords*
 Attempt Be a Geek
