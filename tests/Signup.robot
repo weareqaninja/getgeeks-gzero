@@ -8,6 +8,7 @@ Test Teardown   Finish Session
 
 *Test Cases*
 Register a new user
+    [Tags]      smoke
 
     ${user}     Factory User    faker
 

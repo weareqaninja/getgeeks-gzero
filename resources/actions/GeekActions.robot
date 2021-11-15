@@ -15,7 +15,7 @@ Fill Geek Form
 
     Select Options By       id=printer_repair       text       ${geek_profile}[printer_repair]
     Select Options By       id=work                 text       ${geek_profile}[work]
-
+    
     Fill Text       id=cost         ${geek_profile}[cost]
 
 Submit Geek Form
