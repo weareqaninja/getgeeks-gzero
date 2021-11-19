@@ -4,7 +4,7 @@ Documentation           BeGeek test suite
 Resource        ${EXECDIR}/resources/Base.robot
 
 Test Setup      Start Session
-Test Teardown   Finish Session
+Test Teardown   After Test
 
 *Test Cases*
 Be a Geek
