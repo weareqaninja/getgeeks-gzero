@@ -41,3 +41,27 @@ Be a geek
     Should Be Equal As Strings      ${user}[geek_profile][work]             ${response.json()}[work]
     Should Be Equal As Strings      None                                    ${response.json()}[avatar]
     Should Be Equal As Strings      True                                    ${response.json()}[is_geek]
+
+Get Geek List
+    [Tags]      temp
+
+    ${data}     Factory Search For Geeks
+
+    FOR   ${geek}   IN    @{data}[geeks]
+
+        POST User   ${geek}
+        ${token}    Get Token       ${geek}
+
+        POST Geek  ${token}   ${geek}[geek_profile]
+
+    END
+      
+    POST User   ${data}[user]
+
+    ${token}    Get Token    ${data}[user]
+
+    ${response}             GET Geeks   ${token}
+    Status Should Be        200         ${response}
+
+    ${total}            Get Length      ${response.json()}[Geeks]
+    Should Be True      ${total} > 0
