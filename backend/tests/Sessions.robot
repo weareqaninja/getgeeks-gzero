@@ -28,10 +28,8 @@ User session
     Status Should Be        200                     ${response}
     
     # E deve gerar um token JWT
-    ${size}                 Get Length              ${response.json()}[token]
-    ${expected_size}        Convert To Integer      140
-
-    Should Be Equal         ${expected_size}        ${size}
+    ${size}                Get Length              ${response.json()}[token]
+    Should Be True         ${size} > 0
     
     # E esse token deve expirar em 10 dias
     Should Be Equal         10d                     ${response.json()}[expires_in] 
