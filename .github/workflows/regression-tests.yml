@@ -28,3 +28,9 @@ jobs:
       run: | 
         chmod +x ./backend/run.sh
         cd backend/ && ./run.sh
+    - name: Upload api test results
+      uses: actions/upload-artifact@v2.3.1
+      if: awalys()
+      with:
+        name: api-reports
+        path: backend/logs
