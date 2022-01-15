@@ -40,3 +40,39 @@ jobs:
         name: API Test Result
         path: backend/logs/xunit.xml
         reporter: java-junit
+
+  web_tests:
+    needs: api_tests
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.9"]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install build
+        pip install -r requirements.txt
+    - name: Run Web Tests
+      run: | 
+        chmod +x ./frontend/run.sh
+        cd frontend/ && ./run.sh
+    - name: Upload api test results
+      uses: actions/upload-artifact@v2.3.1
+      if: always()
+      with:
+        name: web-reports
+        path: frontend/logs
+    - name: Test Reporter
+      uses: dorny/test-reporter@v1.5.0
+      with:
+        name: Web Test Result
+        path: frontend/logs/xunit.xml
+        reporter: java-junit
