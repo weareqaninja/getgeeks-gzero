@@ -30,7 +30,7 @@ Insert User
 
 Users Seed
 
-    ${users}        User To Insert DB
+    ${users}        Users To Insert DB
 
     FOR     ${user}  IN   @{users}
 
