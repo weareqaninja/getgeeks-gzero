@@ -58,7 +58,7 @@ def factory_user(target):
                 'desc': 'Instalo Distros Ubuntu, Debian, ElementaryOS, PopOS, Linux Mint, Kurumin, Mandrake, Connectiva, Fedora, RedHat, CentOS, Slackware, Gentoo, Archlinux, Kubuntu, Xubuntu, Suze, Mandriva, Edubuntu, KateOS, Sabayon Linux, Manjaro Linux, BigLinux, ZorinOS, Unit',
                 'printer_repair': 'Não',
                 'work': 'Ambos',
-                'cost': '250'
+                'cost': '200'
             }
         }
     }
